@@ -1,0 +1,10 @@
+<div>
+  <h1>Upcoming Events</h1><hr />
+  <div>
+    <div>
+      <div *ngFor="let event of events" class="divSpace">
+        <app-events-thumbnail [event]="event"></app-events-thumbnail>
+      </div>
+    </div>
+  </div>
+</div>

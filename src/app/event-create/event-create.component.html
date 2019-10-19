@@ -1,0 +1,18 @@
+<h1>New Event</h1>
+<hr />
+<div>
+  <form [formGroup]="eventForm" (ngSubmit)="save()">
+    <label>Name: <input type="text" formControlName="name"></label><br />
+    <label>ID: <input type="number" formControlName="id"></label><br />
+    <label>Date: <input type="date" formControlName="date"></label><br />
+    <label>Time: <input type="time" formControlName="time"></label><br />
+    <label>Price: <input type="text" formControlName="price"></label><br />
+    <label>Address: <input type="text" formControlName="address"></label><br />
+    <label>City: <input type="text" formControlName="city"></label><br />
+    <label>Country: <input type="text" formControlName="country"></label><br />
+    <label>URL: <input type="url" formControlName="onlineUrl"></label>
+    <br/><br/>
+    <button type="submit">Save</button>
+    <button type="button">Cancel</button>
+  </form>
+</div>
